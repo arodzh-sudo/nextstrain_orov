@@ -28,7 +28,7 @@ rule download_metadata:
     output:
         metadata = "data/metadata.tsv"
     params:
-        address = config['ingest_url_prefix'] + 'metadata.tsv.zst'
+        address = config['ingest_url_prefix'] + 'metadata.tsv'
     log:
         "logs/download_metadata.txt",
     benchmark:
@@ -37,15 +37,22 @@ rule download_metadata:
         r"""
         exec &> >(tee {log:q})
 
-        curl -fsSL --compressed {params.address:q} |
-        zstd -d -c > {output.metadata}
+        # Check if this is a local file (starts with ../ or /)
+        if [[ {params.address:q} == ../* ]] || [[ {params.address:q} == /* ]]; then
+            # Local file - copy directly
+            cp {params.address:q} {output.metadata}
+        else
+            # Remote file - download and decompress
+            curl -fsSL --compressed {params.address:q}.zst |
+            zstd -d -c > {output.metadata}
+        fi
         """
 
 rule download_sequences_for_segment:
     output:
         sequences = "data/{segment}/sequences.fasta"
     params:
-        address = lambda w: f"{config['ingest_url_prefix']}{w.segment}/sequences.fasta.zst"
+        address = lambda w: f"{config['ingest_url_prefix']}{w.segment}/sequences.fasta"
     log:
         "logs/{segment}/download_sequences_for_segment.txt",
     benchmark:
@@ -54,8 +61,15 @@ rule download_sequences_for_segment:
         r"""
         exec &> >(tee {log:q})
 
-        curl -fsSL --compressed {params.address:q} |
-        zstd -d -c > {output.sequences}
+        # Check if this is a local file (starts with ../ or /)
+        if [[ {params.address:q} == ../* ]] || [[ {params.address:q} == /* ]]; then
+            # Local file - copy directly
+            cp {params.address:q} {output.sequences}
+        else
+            # Remote file - download and decompress
+            curl -fsSL --compressed {params.address:q}.zst |
+            zstd -d -c > {output.sequences}
+        fi
         """
 
 

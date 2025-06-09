@@ -1,8 +1,8 @@
 {
   "title": "Real-time tracking of Oropouche virus evolution",
-  "maintainers": [
-    {"name": "Miguel Paredes", "url": "https://bedford.io/team/miguel-paredes/"},
-    {"name": "the Nextstrain team", "url": "https://nextstrain.org/team"}
+  "modified by": [
+    {"name": "Arnold Rodriguez", "url": "https://github.com/arodzh-sudo"},
+    {"name": "Florida BPHL's Bioinformatics team", "url": "https://github.com/BPHL-Molecular"}
   ],
   "data_provenance": [
     {
@@ -10,7 +10,7 @@
       "url": "https://www.ncbi.nlm.nih.gov/genbank/"
     }
   ],
-  "build_url": "https://github.com/nextstrain/oropouche",
+  "build_url": "https://github.com/arodzh-sudo/oropouche",
   "colorings": [
     {
       "key": "num_date",

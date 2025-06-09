@@ -1,23 +1,31 @@
-We gratefully acknowledge the authors, originating and submitting laboratories of the genetic sequences and metadata for sharing their work.
+# Real-time tracking of Oropouche virus evolution
 
-Please note that although data generators have generously shared data in an open fashion, that does not mean there should be free license to publish on this data. Data generators should be cited where possible and collaborations should be sought in some circumstances. Please try to avoid scooping someone else's work. Reach out if uncertain.
+This phylogeny shows evolutionary relationships of Oropouche virus (OROV) based on publicly available genomes from NCBI and sequences from Florida's Bureau of Public Health Laboratories.
 
-Much of the recent genomic data here comes from the publication [Naveca et al 2024](https://www.nature.com/articles/s41591-024-03300-3) (labeled as Almeida et al. and Silva et al. in this analysis based on GenBank entries) but more recent sequences from NCBI may not yet be published.
+## Data Sources
 
-We maintain three views of Oropouche virus evolution across different viral segments: for the [L segment](https://nextstrain.org/oropouche/L), for the [M segment](https://nextstrain.org/oropouche/M) and for the [S segment](https://nextstrain.org/oropouche/S). Tangle trees showing co-evolution across segments are also available: for [L and M](https://nextstrain.org/oropouche/L:oropouche/M), for [L and S](https://nextstrain.org/oropouche/L:oropouche/S) and for [M and S](https://nextstrain.org/oropouche/M:oropouche/S).
+### Public Data
+- **NCBI Nucleotide Database**: Publicly available Oropouche virus sequences
+- **Curated and processed**: Using Nextstrain augur toolkit
 
-#### Underlying data
+### Institutional Data  
+- **Florida's Bureau of Public Health Laboratories**: Local sequences
+- **Contact**: [Arnold Rodriguez] ([arnold.rodriguezhilario@flhealth.gov])
 
-We curate sequence data and metadata from NCBI as the starting point for our analyses.
-Metadata is grouped by strain name with segment-specific information encoded using a '_{segment}' suffix.
-Curated sequences and metadata are available as flat files at:
+## Methodology
 
-* [data.nextstrain.org/files/workflows/oropouche/metadata.tsv.zst](https://data.nextstrain.org/files/workflows/oropouche/metadata.tsv.zst)
-* [data.nextstrain.org/files/workflows/oropouche/L/sequences.fasta.zst](https://data.nextstrain.org/files/workflows/oropouche/L/sequences.fasta.zst)
-* [data.nextstrain.org/files/workflows/oropouche/M/sequences.fasta.zst](https://data.nextstrain.org/files/workflows/oropouche/M/sequences.fasta.zst)
-* [data.nextstrain.org/files/workflows/oropouche/S/sequences.fasta.zst](https://data.nextstrain.org/files/workflows/oropouche/S/sequences.fasta.zst)
+Sequences are aligned using MAFFT, and phylogenetic trees are built using IQTree with a molecular clock model. 
 
+### Segment Analysis
+- **L segment**: Large RNA polymerase gene
+- **M segment**: Glycoprotein precursor gene  
+- **S segment**: Nucleocapsid protein gene
+
+## Acknowledgments
+
+We gratefully acknowledge the authors, originating and submitting laboratories of the genetic sequences used in this analysis.
 
 ---
 
-Screenshots may be used under a [CC-BY-4.0 license](https://creativecommons.org/licenses/by/4.0/) and attribution to nextstrain.org must be provided.
+**Maintained by**: Arnold Rodriguez, Florida's Bureau of Public Health Laboratories   
+**This analysis is possible thanks to** [Nextstrain](https://nextstrain.org)
