@@ -2,6 +2,8 @@
 
 This phylogeny shows evolutionary relationships of Oropouche virus (OROV) based on publicly available genomes from NCBI and sequences from Florida's Bureau of Public Health Laboratories.
 
+This Nextstrain build has been modified by Florida's Bureau of Public Health Laboratories to incorporate local sequences alongside publicly available data.
+
 ## Data Sources
 
 ### Public Data
@@ -27,5 +29,5 @@ We gratefully acknowledge the authors, originating and submitting laboratories o
 
 ---
 
-**Maintained by**: Arnold Rodriguez, Florida's Bureau of Public Health Laboratories   
+**Modified anbd maintained by**: Arnold Rodriguez, Florida's Bureau of Public Health Laboratories   
 **This analysis is possible thanks to** [Nextstrain](https://nextstrain.org)
