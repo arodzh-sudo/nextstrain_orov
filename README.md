@@ -26,7 +26,7 @@ nextstrain view .
 
 ### Adding local sequences from assembly pipeline
 
-This workflow supports adding sequences from the BPHL's Juno reference-based assembly pipeline:
+This workflow supports adding sequences from the [BPHL's Juno reference-based assembly pipeline](https://github.com/BPHL-Molecular/Juno):
 
 1. **Run the ingest workflow** to download GenBank data:
    ```bash
