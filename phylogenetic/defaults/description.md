@@ -12,7 +12,7 @@ This Nextstrain build has been modified by Florida's Bureau of Public Health Lab
 
 ### Institutional Data  
 - **Florida's Bureau of Public Health Laboratories**: Local sequences
-- **Contact**: [Arnold Rodriguez] ([arnold.rodriguezhilario@flhealth.gov])
+- **Contact**: [Arnold Rodriguez](arnold.rodriguezhilario@flhealth.gov)
 
 ## Methodology
 
@@ -25,9 +25,4 @@ Sequences are aligned using MAFFT, and phylogenetic trees are built using IQTree
 
 ## Acknowledgments
 
-We gratefully acknowledge the authors, originating and submitting laboratories of the genetic sequences used in this analysis.
-
----
-
-**Modified anbd maintained by**: Arnold Rodriguez, Florida's Bureau of Public Health Laboratories   
-**This analysis is possible thanks to** [Nextstrain](https://nextstrain.org)
+We gratefully acknowledge the authors, originating and submitting laboratories of the genetic sequences used in this analysis. **Modified and maintained by**: Arnold Rodriguez, Florida's Bureau of Public Health Laboratories. **This analysis is possible thanks to** [Nextstrain](https://nextstrain.org)
